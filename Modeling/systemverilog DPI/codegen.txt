@@ -1,0 +1,3 @@
+codegen AES_main_c -args {string,string} -config:lib
+
+try to put all functions in one file if previous generation failed

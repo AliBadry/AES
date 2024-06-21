@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1718884425">
+  <File Type="OPT-HWDEF" Name="AES_128.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="AES_128_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="AES_128.dcp"/>
+  <File Type="BITSTR-BMM" Name="AES_128_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="AES_128_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="AES_128_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="AES_128_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="AES_128.tcl"/>
+  <File Type="OPT-TIMING" Name="AES_128_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="AES_128_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="AES_128_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="AES_128_reports.tcl"/>
+  <File Type="OPT-DRC" Name="AES_128_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="AES_128_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="AES_128_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="AES_128_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="AES_128_placed.dcp"/>
+  <File Type="PLACE-IO" Name="AES_128_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="AES_128_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="AES_128_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="AES_128_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="AES_128_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="AES_128_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="AES_128_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="AES_128_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="AES_128_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="AES_128.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="AES_128_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="AES_128_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="AES_128_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="AES_128.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="AES_128_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="AES_128_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="AES_128_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="AES_128_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="AES_128_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="AES_128_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="AES_128.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="AES_128_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="AES_128.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="AES_128_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="AES_128_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="AES_128.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="AES_128_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="AES_128_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="AES_128_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="AES_128_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="AES_128_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="AES_128_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="AES_128_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="AES_128_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="AES_128_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="AES_128_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="AES_128_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="AES_128_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="AES_128_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="AES_128_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="AES_128_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="AES_128_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="AES_128_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="AES_128_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="AES_128.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="AES_128_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="AES_128.rbt"/>
+  <File Type="BITSTR-NKY" Name="AES_128.nky"/>
+  <File Type="BG-BGN" Name="AES_128.bgn"/>
+  <File Type="BG-DRC" Name="AES_128.drc"/>
+  <File Type="RDI-RDI" Name="AES_128.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_key_exp/AES_expansion_interface.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_key_exp/AES_expansion_interface.sv"/>
+        <Attr Name="ImportTime" Val="1717598577"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_key_exp/AES_key_expansion.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_key_exp/AES_key_expansion.sv"/>
+        <Attr Name="ImportTime" Val="1717598485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_rounds/AES_round_operation.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_rounds/AES_round_operation.sv"/>
+        <Attr Name="ImportTime" Val="1717767677"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_key_exp/G_function.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_key_exp/G_function.sv"/>
+        <Attr Name="ImportTime" Val="1717598712"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_key_exp/G_interface.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_key_exp/G_interface.sv"/>
+        <Attr Name="ImportTime" Val="1717709027"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_rounds/MUX2x1.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_rounds/MUX2x1.sv"/>
+        <Attr Name="ImportTime" Val="1717598548"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_key_exp/RC_rom.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_key_exp/RC_rom.sv"/>
+        <Attr Name="ImportTime" Val="1717709211"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_key_exp/S_box.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_key_exp/S_box.sv"/>
+        <Attr Name="ImportTime" Val="1717750624"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_rounds/S_box_v2.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_rounds/S_box_v2.sv"/>
+        <Attr Name="ImportTime" Val="1717709246"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/controller/controller.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/controller/controller.sv"/>
+        <Attr Name="ImportTime" Val="1717771207"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_rounds/mix_columns.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_rounds/mix_columns.sv"/>
+        <Attr Name="ImportTime" Val="1717762014"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_rounds/rounds_interface.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_rounds/rounds_interface.sv"/>
+        <Attr Name="ImportTime" Val="1717767650"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_rounds/shift_rows.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_rounds/shift_rows.sv"/>
+        <Attr Name="ImportTime" Val="1717669237"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_128.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_128.sv"/>
+        <Attr Name="ImportTime" Val="1717767584"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_128_interface.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_128_interface.sv"/>
+        <Attr Name="ImportTime" Val="1717706446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="AES_128"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/timing.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/timing.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Strategy_aloshka" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design">
+      <Option Id="Directive">2</Option>
+      <Option Id="Verbose">1</Option>
+    </Step>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design">
+      <Option Id="Directive">8</Option>
+    </Step>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1">
+      <Option Id="Directive">2</Option>
+    </Step>
+    <Step Id="route_design">
+      <Option Id="Directive">1</Option>
+    </Step>
+    <Step Id="post_route_phys_opt_design" EnableStepBool="1">
+      <Option Id="Directive">1</Option>
+    </Step>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

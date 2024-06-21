@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Aloshka/Collage/post collage material/AES/RTL/Design/AES_rounds
+vAES_rounds_operation
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1717674780
+!i10b 1
+!s100 bW_fXn>fDhZ653k645c1M0
+IX_nO6E4nc[8d=_LHf5COd2
+S1
+R0
+w1717674775
+8AES_round_operation.sv
+FAES_round_operation.sv
+!i122 4
+L0 1 64
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z5 !s108 1717674780.000000
+!s107 S_box_v2.sv|shift_rows.sv|MUX2x1.sv|mix_columns.sv|AES_round_operation.sv|
+Z6 !s90 AES_round_operation.sv|mix_columns.sv|MUX2x1.sv|shift_rows.sv|S_box_v2.sv|
+!i113 0
+Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+n@a@e@s_rounds_operation
+vmix_columns
+R1
+R2
+!i10b 1
+!s100 ^L_6CME2<J4:1SLU`b`WF2
+I4IKGZg9z]@TZ7E;T7lQ721
+S1
+R0
+w1717673560
+8mix_columns.sv
+Fmix_columns.sv
+!i122 4
+L0 1 33
+R3
+R4
+r1
+!s85 0
+31
+R5
+Z9 !s107 S_box_v2.sv|shift_rows.sv|MUX2x1.sv|mix_columns.sv|AES_round_operation.sv|
+R6
+!i113 0
+R7
+R8
+vMUX2x1
+R1
+R2
+!i10b 1
+!s100 hzoSRge?nHjaNOmWVLY1H2
+IKRNzHH;89HdFM:LLkANFR3
+S1
+R0
+w1717598548
+8MUX2x1.sv
+FMUX2x1.sv
+!i122 4
+L0 1 12
+R3
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 0
+R7
+R8
+n@m@u@x2x1
+vS_box_v2
+R1
+R2
+!i10b 1
+!s100 4Il1i5W^zXRzIK5m9Y<T;3
+IM:O1Z=C6aeoYR^QR3?K4j2
+S1
+R0
+w1717592283
+8S_box_v2.sv
+FS_box_v2.sv
+!i122 4
+L0 2 16
+R3
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 0
+R7
+R8
+n@s_box_v2
+vshift_rows
+R1
+R2
+!i10b 1
+!s100 70Y]olGeZSA^^oDWFG;c^1
+IgD<?BR^;1oO>2RAa>9cV_3
+S1
+R0
+w1717669237
+8shift_rows.sv
+Fshift_rows.sv
+!i122 4
+L0 1 24
+R3
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 0
+R7
+R8

@@ -1,0 +1,423 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dF:/Aloshka/Collage/post collage material/AES/RTL/Design
+T_opt
+!s110 1717771373
+VMUmGXbR[@__8;Dka>2enR0
+04 10 4 work AES_128_TB fast 0
+=1-c01850960e99-66631c6c-328-5078
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vAES_128
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z4 !s110 1717771370
+!i10b 1
+!s100 4OChBmKC62=EYCTYF=VkT1
+IM3HaabASN>:ML^];5YCZ22
+S1
+R1
+w1717767584
+8AES_128.sv
+FAES_128.sv
+!i122 3
+L0 1 74
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z7 !s108 1717771370.000000
+Z8 !s107 AES_128_interface.sv|AES_128_TB.sv|AES_128.sv|
+Z9 !s90 -reportprogress|300|AES_128.sv|AES_128_TB.sv|AES_128_interface.sv|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@a@e@s_128
+YAES_128_interface
+R3
+R4
+!i10b 1
+!s100 @8Zc9FVhXf:HgJgPhOF_71
+IO;[>3fzo?4TCZMEDg3J`^1
+S1
+R1
+w1717706446
+8AES_128_interface.sv
+FAES_128_interface.sv
+!i122 3
+Z11 L0 1 0
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R2
+n@a@e@s_128_interface
+vAES_128_TB
+R3
+R4
+!i10b 1
+!s100 TUYHf6QcDO_M:kEJE[O;^3
+I5GX4fE0`RFHBaMXf^U<6Q0
+S1
+R1
+w1717771360
+8AES_128_TB.sv
+FAES_128_TB.sv
+!i122 3
+L0 1 56
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R2
+n@a@e@s_128_@t@b
+YAES_expansion_intf
+R3
+R4
+!i10b 1
+!s100 7n1Kif60[A4Jh:Lnj34an3
+I0l82hYzD2Si5I1V0dB=5S0
+S1
+R1
+w1717598577
+8AES_key_exp/AES_expansion_interface.sv
+FAES_key_exp/AES_expansion_interface.sv
+!i122 0
+R11
+R5
+R6
+r1
+!s85 0
+31
+R7
+Z12 !s107 AES_key_exp/S_box.sv|AES_key_exp/RC_rom.sv|AES_key_exp/MUX2x1.sv|AES_key_exp/G_interface.sv|AES_key_exp/G_function.sv|AES_key_exp/AES_key_expansion.sv|AES_key_exp/AES_expansion_interface.sv|
+Z13 !s90 -reportprogress|300|AES_key_exp/AES_expansion_interface.sv|AES_key_exp/AES_key_expansion.sv|AES_key_exp/G_function.sv|AES_key_exp/G_interface.sv|AES_key_exp/MUX2x1.sv|AES_key_exp/RC_rom.sv|AES_key_exp/S_box.sv|
+!i113 0
+R10
+R2
+n@a@e@s_expansion_intf
+vAES_key_expansion
+R3
+R4
+!i10b 1
+!s100 jCiZSBHffYFcHzAEO>_620
+Ia>6]5f]X:I;m9?jOf2Vd^1
+S1
+R1
+w1717598485
+8AES_key_exp/AES_key_expansion.sv
+FAES_key_exp/AES_key_expansion.sv
+!i122 0
+L0 1 50
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R13
+!i113 0
+R10
+R2
+n@a@e@s_key_expansion
+vAES_rounds_operation
+R3
+R4
+!i10b 1
+!s100 BUal:?>B2<_2PdDL9XfEi1
+IC9iA`LH<zFM;jnc9?`3bk0
+S1
+R1
+w1717767677
+8AES_rounds/AES_round_operation.sv
+FAES_rounds/AES_round_operation.sv
+!i122 1
+L0 1 86
+R5
+R6
+r1
+!s85 0
+31
+R7
+Z14 !s107 AES_rounds/shift_rows.sv|AES_rounds/rounds_interface.sv|AES_rounds/mix_columns.sv|AES_rounds/S_box_v2.sv|AES_rounds/MUX2x1.sv|AES_rounds/AES_round_operation.sv|
+Z15 !s90 -reportprogress|300|AES_rounds/AES_round_operation.sv|AES_rounds/MUX2x1.sv|AES_rounds/S_box_v2.sv|AES_rounds/mix_columns.sv|AES_rounds/rounds_interface.sv|AES_rounds/shift_rows.sv|
+!i113 0
+R10
+R2
+n@a@e@s_rounds_operation
+vcontroller
+R3
+R4
+!i10b 1
+!s100 KojdZbzFkH25MDlK^=1:Q3
+I>k]Z^Hcni:?8:YnZ:KkB]3
+S1
+R1
+w1717771207
+8controller/controller.sv
+Fcontroller/controller.sv
+!i122 2
+L0 1 359
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 controller/controller.sv|
+!s90 -reportprogress|300|controller/controller.sv|
+!i113 0
+R10
+R2
+vG_function
+R3
+R4
+!i10b 1
+!s100 7XLE406Sh@jhL]mZ=WoXe3
+I4?O^i^I1_zaS::n<6K?ni3
+S1
+R1
+w1717598712
+8AES_key_exp/G_function.sv
+FAES_key_exp/G_function.sv
+!i122 0
+L0 1 37
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R13
+!i113 0
+R10
+R2
+n@g_function
+YG_interface
+R3
+R4
+!i10b 1
+!s100 5bV^<8mm@15A@?:aDFiS61
+I03^A0lT9zzc9<IW1]^9kf1
+S1
+R1
+w1717709027
+8AES_key_exp/G_interface.sv
+FAES_key_exp/G_interface.sv
+!i122 0
+R11
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R13
+!i113 0
+R10
+R2
+n@g_interface
+vmix_columns
+R3
+R4
+!i10b 1
+!s100 E@]<cie@5ngA[I0UzQozQ3
+IGze@g5;]f?g5z:^_m0Oke1
+S1
+R1
+w1717762014
+8AES_rounds/mix_columns.sv
+FAES_rounds/mix_columns.sv
+!i122 1
+L0 1 63
+R5
+R6
+r1
+!s85 0
+31
+R7
+R14
+R15
+!i113 0
+R10
+R2
+vMUX2x1
+R3
+R4
+!i10b 1
+!s100 hzoSRge?nHjaNOmWVLY1H2
+Iad;8Nj]7T^l3@C5a0CkMg0
+S1
+R1
+w1717598548
+8AES_rounds/MUX2x1.sv
+FAES_rounds/MUX2x1.sv
+!i122 1
+L0 1 12
+R5
+R6
+r1
+!s85 0
+31
+R7
+R14
+R15
+!i113 0
+R10
+R2
+n@m@u@x2x1
+vRC_rom
+R3
+R4
+!i10b 1
+!s100 O4@U0jZS?ca5jQoo_1bPM2
+I7kZ>je_OSS[[AQPQX;V@11
+S1
+R1
+w1717709211
+8AES_key_exp/RC_rom.sv
+FAES_key_exp/RC_rom.sv
+!i122 0
+L0 1 19
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R13
+!i113 0
+R10
+R2
+n@r@c_rom
+Yrounds_interface
+R3
+R4
+!i10b 1
+!s100 lg3EK]5e3^AkCEM408gMT3
+I9edj3=OA?V]^Hg18VDO>70
+S1
+R1
+w1717767650
+8AES_rounds/rounds_interface.sv
+FAES_rounds/rounds_interface.sv
+!i122 1
+R11
+R5
+R6
+r1
+!s85 0
+31
+R7
+R14
+R15
+!i113 0
+R10
+R2
+vS_box
+R3
+R4
+!i10b 1
+!s100 DQLen>8^m_TUDnKj7d?533
+IQhVNK1C1[5C>FCgKL:iUY3
+S1
+R1
+w1717750624
+8AES_key_exp/S_box.sv
+FAES_key_exp/S_box.sv
+!i122 0
+L0 2 524
+R5
+R6
+r1
+!s85 0
+31
+R7
+R12
+R13
+!i113 0
+R10
+R2
+n@s_box
+vS_box_v2
+R3
+R4
+!i10b 1
+!s100 3IRLF8FSGBeA?od>I@E:<3
+I=bh^Q:X^g`2IN]<nDAz9^3
+S1
+R1
+w1717709246
+8AES_rounds/S_box_v2.sv
+FAES_rounds/S_box_v2.sv
+!i122 1
+L0 2 16
+R5
+R6
+r1
+!s85 0
+31
+R7
+R14
+R15
+!i113 0
+R10
+R2
+n@s_box_v2
+vshift_rows
+R3
+R4
+!i10b 1
+!s100 70Y]olGeZSA^^oDWFG;c^1
+IYFIobo_Q7l2z4<W<oaN042
+S1
+R1
+w1717669237
+8AES_rounds/shift_rows.sv
+FAES_rounds/shift_rows.sv
+!i122 1
+L0 1 24
+R5
+R6
+r1
+!s85 0
+31
+R7
+R14
+R15
+!i113 0
+R10
+R2

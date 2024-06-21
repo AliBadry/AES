@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1717776386">
+  <File Type="PA-TCL" Name="AES_128.tcl"/>
+  <File Type="REPORTS-TCL" Name="AES_128_reports.tcl"/>
+  <File Type="RDS-RDS" Name="AES_128.vds"/>
+  <File Type="RDS-UTIL" Name="AES_128_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="AES_128_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="AES_128.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_key_exp/AES_expansion_interface.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_key_exp/AES_expansion_interface.sv"/>
+        <Attr Name="ImportTime" Val="1717598577"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_key_exp/AES_key_expansion.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_key_exp/AES_key_expansion.sv"/>
+        <Attr Name="ImportTime" Val="1717598485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_rounds/AES_round_operation.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_rounds/AES_round_operation.sv"/>
+        <Attr Name="ImportTime" Val="1717767677"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_key_exp/G_function.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_key_exp/G_function.sv"/>
+        <Attr Name="ImportTime" Val="1717598712"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_key_exp/G_interface.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_key_exp/G_interface.sv"/>
+        <Attr Name="ImportTime" Val="1717709027"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_rounds/MUX2x1.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_rounds/MUX2x1.sv"/>
+        <Attr Name="ImportTime" Val="1717598548"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_key_exp/RC_rom.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_key_exp/RC_rom.sv"/>
+        <Attr Name="ImportTime" Val="1717709211"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_key_exp/S_box.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_key_exp/S_box.sv"/>
+        <Attr Name="ImportTime" Val="1717750624"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_rounds/S_box_v2.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_rounds/S_box_v2.sv"/>
+        <Attr Name="ImportTime" Val="1717709246"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/controller/controller.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/controller/controller.sv"/>
+        <Attr Name="ImportTime" Val="1717771207"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_rounds/mix_columns.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_rounds/mix_columns.sv"/>
+        <Attr Name="ImportTime" Val="1717762014"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_rounds/rounds_interface.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_rounds/rounds_interface.sv"/>
+        <Attr Name="ImportTime" Val="1717767650"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_rounds/shift_rows.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_rounds/shift_rows.sv"/>
+        <Attr Name="ImportTime" Val="1717669237"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_128.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_128.sv"/>
+        <Attr Name="ImportTime" Val="1717767584"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Design/AES_128_interface.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Design/AES_128_interface.sv"/>
+        <Attr Name="ImportTime" Val="1717706446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="AES_128"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/timing.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/timing.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Strategy_aloshka" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design">
+      <Option Id="ResourceSharing">2</Option>
+      <Option Id="CascadeDsp">1</Option>
+      <Option Id="NoCombineLuts">1</Option>
+      <Option Id="FsmExtraction">1</Option>
+      <Option Id="ReTiming">1</Option>
+      <Option Id="RepFanoutThreshold">100</Option>
+      <Option Id="KeepEquivalentRegisters">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>

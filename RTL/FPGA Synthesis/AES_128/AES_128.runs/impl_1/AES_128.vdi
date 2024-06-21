@@ -1,0 +1,1256 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jun 20 14:53:53 2024
+# Process ID: 13960
+# Current directory: F:/Aloshka/Collage/post collage material/AES/RTL/FPGA Synthesis/AES_128/AES_128.runs/impl_1
+# Command line: vivado.exe -log AES_128.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source AES_128.tcl -notrace
+# Log file: F:/Aloshka/Collage/post collage material/AES/RTL/FPGA Synthesis/AES_128/AES_128.runs/impl_1/AES_128.vdi
+# Journal file: F:/Aloshka/Collage/post collage material/AES/RTL/FPGA Synthesis/AES_128/AES_128.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source AES_128.tcl -notrace
+Command: open_checkpoint {F:/Aloshka/Collage/post collage material/AES/RTL/FPGA Synthesis/AES_128/AES_128.runs/impl_1/AES_128.dcp}
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 238.289 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 259 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 259 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 259 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2018.2 (64-bit) build 2258646
+open_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:41 . Memory (MB): peak = 1624.898 ; gain = 1395.512
+Command: opt_design -verbose -directive ExploreSequentialArea
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: ExploreSequentialArea
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1640.293 ; gain = 15.395
+
+Starting Cache Timing Information Task
+Ending Cache Timing Information Task | Checksum: eab41c45
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1642.688 ; gain = 2.395
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-442] LUT Reduction optimized 0 LUTs
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[0]/CLR of AKE1/round_key_reg[0].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[100]/CLR of AKE1/round_key_reg[100].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[101]/CLR of AKE1/round_key_reg[101].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[102]/CLR of AKE1/round_key_reg[102].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[103]/CLR of AKE1/round_key_reg[103].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[104]/CLR of AKE1/round_key_reg[104].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[105]/CLR of AKE1/round_key_reg[105].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[106]/CLR of AKE1/round_key_reg[106].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[107]/CLR of AKE1/round_key_reg[107].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[108]/CLR of AKE1/round_key_reg[108].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[109]/CLR of AKE1/round_key_reg[109].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[10]/CLR of AKE1/round_key_reg[10].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[110]/CLR of AKE1/round_key_reg[110].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[111]/CLR of AKE1/round_key_reg[111].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[112]/CLR of AKE1/round_key_reg[112].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[113]/CLR of AKE1/round_key_reg[113].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[114]/CLR of AKE1/round_key_reg[114].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[115]/CLR of AKE1/round_key_reg[115].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[116]/CLR of AKE1/round_key_reg[116].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[117]/CLR of AKE1/round_key_reg[117].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[118]/CLR of AKE1/round_key_reg[118].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[119]/CLR of AKE1/round_key_reg[119].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[11]/CLR of AKE1/round_key_reg[11].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[120]/CLR of AKE1/round_key_reg[120].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[121]/CLR of AKE1/round_key_reg[121].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[122]/CLR of AKE1/round_key_reg[122].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[123]/CLR of AKE1/round_key_reg[123].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[124]/CLR of AKE1/round_key_reg[124].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[125]/CLR of AKE1/round_key_reg[125].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[126]/CLR of AKE1/round_key_reg[126].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[127]/CLR of AKE1/round_key_reg[127].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[12]/CLR of AKE1/round_key_reg[12].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[13]/CLR of AKE1/round_key_reg[13].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[14]/CLR of AKE1/round_key_reg[14].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[15]/CLR of AKE1/round_key_reg[15].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[16]/CLR of AKE1/round_key_reg[16].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[17]/CLR of AKE1/round_key_reg[17].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[18]/CLR of AKE1/round_key_reg[18].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[19]/CLR of AKE1/round_key_reg[19].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[1]/CLR of AKE1/round_key_reg[1].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[20]/CLR of AKE1/round_key_reg[20].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[21]/CLR of AKE1/round_key_reg[21].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[22]/CLR of AKE1/round_key_reg[22].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[23]/CLR of AKE1/round_key_reg[23].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[24]/CLR of AKE1/round_key_reg[24].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[25]/CLR of AKE1/round_key_reg[25].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[26]/CLR of AKE1/round_key_reg[26].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[27]/CLR of AKE1/round_key_reg[27].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[28]/CLR of AKE1/round_key_reg[28].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[29]/CLR of AKE1/round_key_reg[29].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[2]/CLR of AKE1/round_key_reg[2].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[30]/CLR of AKE1/round_key_reg[30].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[31]/CLR of AKE1/round_key_reg[31].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[32]/CLR of AKE1/round_key_reg[32].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[33]/CLR of AKE1/round_key_reg[33].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[34]/CLR of AKE1/round_key_reg[34].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[35]/CLR of AKE1/round_key_reg[35].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[36]/CLR of AKE1/round_key_reg[36].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[37]/CLR of AKE1/round_key_reg[37].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[38]/CLR of AKE1/round_key_reg[38].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[39]/CLR of AKE1/round_key_reg[39].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[3]/CLR of AKE1/round_key_reg[3].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[40]/CLR of AKE1/round_key_reg[40].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[41]/CLR of AKE1/round_key_reg[41].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[42]/CLR of AKE1/round_key_reg[42].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[43]/CLR of AKE1/round_key_reg[43].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[44]/CLR of AKE1/round_key_reg[44].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[45]/CLR of AKE1/round_key_reg[45].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[46]/CLR of AKE1/round_key_reg[46].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[47]/CLR of AKE1/round_key_reg[47].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[48]/CLR of AKE1/round_key_reg[48].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[49]/CLR of AKE1/round_key_reg[49].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[4]/CLR of AKE1/round_key_reg[4].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[50]/CLR of AKE1/round_key_reg[50].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[51]/CLR of AKE1/round_key_reg[51].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[52]/CLR of AKE1/round_key_reg[52].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[53]/CLR of AKE1/round_key_reg[53].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[54]/CLR of AKE1/round_key_reg[54].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[55]/CLR of AKE1/round_key_reg[55].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[56]/CLR of AKE1/round_key_reg[56].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[57]/CLR of AKE1/round_key_reg[57].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[58]/CLR of AKE1/round_key_reg[58].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[59]/CLR of AKE1/round_key_reg[59].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[5]/CLR of AKE1/round_key_reg[5].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[60]/CLR of AKE1/round_key_reg[60].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[61]/CLR of AKE1/round_key_reg[61].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[62]/CLR of AKE1/round_key_reg[62].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[63]/CLR of AKE1/round_key_reg[63].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[64]/CLR of AKE1/round_key_reg[64].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[65]/CLR of AKE1/round_key_reg[65].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[66]/CLR of AKE1/round_key_reg[66].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[67]/CLR of AKE1/round_key_reg[67].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[68]/CLR of AKE1/round_key_reg[68].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[69]/CLR of AKE1/round_key_reg[69].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[6]/CLR of AKE1/round_key_reg[6].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[70]/CLR of AKE1/round_key_reg[70].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[71]/CLR of AKE1/round_key_reg[71].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[72]/CLR of AKE1/round_key_reg[72].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[73]/CLR of AKE1/round_key_reg[73].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[74]/CLR of AKE1/round_key_reg[74].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[75]/CLR of AKE1/round_key_reg[75].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[76]/CLR of AKE1/round_key_reg[76].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[77]/CLR of AKE1/round_key_reg[77].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[78]/CLR of AKE1/round_key_reg[78].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[79]/CLR of AKE1/round_key_reg[79].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[7]/CLR of AKE1/round_key_reg[7].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[80]/CLR of AKE1/round_key_reg[80].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[81]/CLR of AKE1/round_key_reg[81].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[82]/CLR of AKE1/round_key_reg[82].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[83]/CLR of AKE1/round_key_reg[83].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[84]/CLR of AKE1/round_key_reg[84].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[85]/CLR of AKE1/round_key_reg[85].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[86]/CLR of AKE1/round_key_reg[86].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[87]/CLR of AKE1/round_key_reg[87].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[88]/CLR of AKE1/round_key_reg[88].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[89]/CLR of AKE1/round_key_reg[89].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[8]/CLR of AKE1/round_key_reg[8].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[90]/CLR of AKE1/round_key_reg[90].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[91]/CLR of AKE1/round_key_reg[91].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[92]/CLR of AKE1/round_key_reg[92].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[93]/CLR of AKE1/round_key_reg[93].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[94]/CLR of AKE1/round_key_reg[94].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[95]/CLR of AKE1/round_key_reg[95].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[96]/CLR of AKE1/round_key_reg[96].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[97]/CLR of AKE1/round_key_reg[97].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[98]/CLR of AKE1/round_key_reg[98].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[99]/CLR of AKE1/round_key_reg[99].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin AKE1/round_key_reg[9]/CLR of AKE1/round_key_reg[9].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin CU1/FSM_onehot_current_state_reg[10]/CLR of CU1/FSM_onehot_current_state_reg[10].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin CU1/FSM_onehot_current_state_reg[11]/CLR of CU1/FSM_onehot_current_state_reg[11].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin CU1/FSM_onehot_current_state_reg[12]/CLR of CU1/FSM_onehot_current_state_reg[12].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin CU1/FSM_onehot_current_state_reg[1]/CLR of CU1/FSM_onehot_current_state_reg[1].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin CU1/FSM_onehot_current_state_reg[2]/CLR of CU1/FSM_onehot_current_state_reg[2].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin CU1/FSM_onehot_current_state_reg[3]/CLR of CU1/FSM_onehot_current_state_reg[3].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin CU1/FSM_onehot_current_state_reg[4]/CLR of CU1/FSM_onehot_current_state_reg[4].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin CU1/FSM_onehot_current_state_reg[5]/CLR of CU1/FSM_onehot_current_state_reg[5].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin CU1/FSM_onehot_current_state_reg[6]/CLR of CU1/FSM_onehot_current_state_reg[6].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin CU1/FSM_onehot_current_state_reg[7]/CLR of CU1/FSM_onehot_current_state_reg[7].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin CU1/FSM_onehot_current_state_reg[8]/CLR of CU1/FSM_onehot_current_state_reg[8].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin CU1/FSM_onehot_current_state_reg[9]/CLR of CU1/FSM_onehot_current_state_reg[9].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin CU1/counter_seq_reg[0]/CLR of CU1/counter_seq_reg[0].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin CU1/FSM_onehot_current_state_reg[0]/PRE of CU1/FSM_onehot_current_state_reg[0].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[0]/CLR of ARO1/FF1_out_reg[0].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[100]/CLR of ARO1/FF1_out_reg[100].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[101]/CLR of ARO1/FF1_out_reg[101].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[102]/CLR of ARO1/FF1_out_reg[102].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[103]/CLR of ARO1/FF1_out_reg[103].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[104]/CLR of ARO1/FF1_out_reg[104].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[105]/CLR of ARO1/FF1_out_reg[105].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[106]/CLR of ARO1/FF1_out_reg[106].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[107]/CLR of ARO1/FF1_out_reg[107].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[108]/CLR of ARO1/FF1_out_reg[108].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[109]/CLR of ARO1/FF1_out_reg[109].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[10]/CLR of ARO1/FF1_out_reg[10].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[110]/CLR of ARO1/FF1_out_reg[110].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[111]/CLR of ARO1/FF1_out_reg[111].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[112]/CLR of ARO1/FF1_out_reg[112].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[113]/CLR of ARO1/FF1_out_reg[113].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[114]/CLR of ARO1/FF1_out_reg[114].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[115]/CLR of ARO1/FF1_out_reg[115].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[116]/CLR of ARO1/FF1_out_reg[116].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[117]/CLR of ARO1/FF1_out_reg[117].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[118]/CLR of ARO1/FF1_out_reg[118].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[119]/CLR of ARO1/FF1_out_reg[119].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[11]/CLR of ARO1/FF1_out_reg[11].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[120]/CLR of ARO1/FF1_out_reg[120].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[121]/CLR of ARO1/FF1_out_reg[121].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[122]/CLR of ARO1/FF1_out_reg[122].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[123]/CLR of ARO1/FF1_out_reg[123].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[124]/CLR of ARO1/FF1_out_reg[124].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[125]/CLR of ARO1/FF1_out_reg[125].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[126]/CLR of ARO1/FF1_out_reg[126].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[127]/CLR of ARO1/FF1_out_reg[127].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[12]/CLR of ARO1/FF1_out_reg[12].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[13]/CLR of ARO1/FF1_out_reg[13].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[14]/CLR of ARO1/FF1_out_reg[14].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[15]/CLR of ARO1/FF1_out_reg[15].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[16]/CLR of ARO1/FF1_out_reg[16].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[17]/CLR of ARO1/FF1_out_reg[17].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[18]/CLR of ARO1/FF1_out_reg[18].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[19]/CLR of ARO1/FF1_out_reg[19].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[1]/CLR of ARO1/FF1_out_reg[1].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[20]/CLR of ARO1/FF1_out_reg[20].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[21]/CLR of ARO1/FF1_out_reg[21].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[22]/CLR of ARO1/FF1_out_reg[22].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[23]/CLR of ARO1/FF1_out_reg[23].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[24]/CLR of ARO1/FF1_out_reg[24].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[25]/CLR of ARO1/FF1_out_reg[25].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[26]/CLR of ARO1/FF1_out_reg[26].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[27]/CLR of ARO1/FF1_out_reg[27].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[28]/CLR of ARO1/FF1_out_reg[28].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[29]/CLR of ARO1/FF1_out_reg[29].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[2]/CLR of ARO1/FF1_out_reg[2].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[30]/CLR of ARO1/FF1_out_reg[30].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[31]/CLR of ARO1/FF1_out_reg[31].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[32]/CLR of ARO1/FF1_out_reg[32].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[33]/CLR of ARO1/FF1_out_reg[33].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[34]/CLR of ARO1/FF1_out_reg[34].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[35]/CLR of ARO1/FF1_out_reg[35].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[36]/CLR of ARO1/FF1_out_reg[36].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[37]/CLR of ARO1/FF1_out_reg[37].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[38]/CLR of ARO1/FF1_out_reg[38].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[39]/CLR of ARO1/FF1_out_reg[39].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[3]/CLR of ARO1/FF1_out_reg[3].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[40]/CLR of ARO1/FF1_out_reg[40].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[41]/CLR of ARO1/FF1_out_reg[41].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[42]/CLR of ARO1/FF1_out_reg[42].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[43]/CLR of ARO1/FF1_out_reg[43].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[44]/CLR of ARO1/FF1_out_reg[44].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[45]/CLR of ARO1/FF1_out_reg[45].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[46]/CLR of ARO1/FF1_out_reg[46].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[47]/CLR of ARO1/FF1_out_reg[47].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[48]/CLR of ARO1/FF1_out_reg[48].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[49]/CLR of ARO1/FF1_out_reg[49].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[4]/CLR of ARO1/FF1_out_reg[4].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[50]/CLR of ARO1/FF1_out_reg[50].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[51]/CLR of ARO1/FF1_out_reg[51].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[52]/CLR of ARO1/FF1_out_reg[52].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[53]/CLR of ARO1/FF1_out_reg[53].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[54]/CLR of ARO1/FF1_out_reg[54].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[55]/CLR of ARO1/FF1_out_reg[55].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[56]/CLR of ARO1/FF1_out_reg[56].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[57]/CLR of ARO1/FF1_out_reg[57].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[58]/CLR of ARO1/FF1_out_reg[58].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[59]/CLR of ARO1/FF1_out_reg[59].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[5]/CLR of ARO1/FF1_out_reg[5].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[60]/CLR of ARO1/FF1_out_reg[60].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[61]/CLR of ARO1/FF1_out_reg[61].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[62]/CLR of ARO1/FF1_out_reg[62].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[63]/CLR of ARO1/FF1_out_reg[63].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[64]/CLR of ARO1/FF1_out_reg[64].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[65]/CLR of ARO1/FF1_out_reg[65].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[66]/CLR of ARO1/FF1_out_reg[66].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[67]/CLR of ARO1/FF1_out_reg[67].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[68]/CLR of ARO1/FF1_out_reg[68].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[69]/CLR of ARO1/FF1_out_reg[69].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[6]/CLR of ARO1/FF1_out_reg[6].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[70]/CLR of ARO1/FF1_out_reg[70].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[71]/CLR of ARO1/FF1_out_reg[71].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[72]/CLR of ARO1/FF1_out_reg[72].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[73]/CLR of ARO1/FF1_out_reg[73].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[74]/CLR of ARO1/FF1_out_reg[74].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[75]/CLR of ARO1/FF1_out_reg[75].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[76]/CLR of ARO1/FF1_out_reg[76].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[77]/CLR of ARO1/FF1_out_reg[77].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[78]/CLR of ARO1/FF1_out_reg[78].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[79]/CLR of ARO1/FF1_out_reg[79].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[7]/CLR of ARO1/FF1_out_reg[7].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[80]/CLR of ARO1/FF1_out_reg[80].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[81]/CLR of ARO1/FF1_out_reg[81].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[82]/CLR of ARO1/FF1_out_reg[82].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[83]/CLR of ARO1/FF1_out_reg[83].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[84]/CLR of ARO1/FF1_out_reg[84].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[85]/CLR of ARO1/FF1_out_reg[85].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[86]/CLR of ARO1/FF1_out_reg[86].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[87]/CLR of ARO1/FF1_out_reg[87].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[88]/CLR of ARO1/FF1_out_reg[88].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[89]/CLR of ARO1/FF1_out_reg[89].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[8]/CLR of ARO1/FF1_out_reg[8].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[90]/CLR of ARO1/FF1_out_reg[90].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[91]/CLR of ARO1/FF1_out_reg[91].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[92]/CLR of ARO1/FF1_out_reg[92].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[93]/CLR of ARO1/FF1_out_reg[93].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[94]/CLR of ARO1/FF1_out_reg[94].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[95]/CLR of ARO1/FF1_out_reg[95].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[96]/CLR of ARO1/FF1_out_reg[96].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[97]/CLR of ARO1/FF1_out_reg[97].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[98]/CLR of ARO1/FF1_out_reg[98].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[99]/CLR of ARO1/FF1_out_reg[99].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF1_out_reg[9]/CLR of ARO1/FF1_out_reg[9].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[0]/CLR of ARO1/FF_before_MUX2_in0_reg[0].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[100]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[100]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[100]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[100]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[100]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[100]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[100]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[100]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[100]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[100]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[100]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[100]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[101]/CLR of ARO1/FF_before_MUX2_in0_reg[101].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[102]/CLR of ARO1/FF_before_MUX2_in0_reg[102].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[103]/CLR of ARO1/FF_before_MUX2_in0_reg[103].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[104]/CLR of ARO1/FF_before_MUX2_in0_reg[104].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[105]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[105]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[105]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[105]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[105]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[105]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[105]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[105]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[105]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[105]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[105]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[105]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[106]/CLR of ARO1/FF_before_MUX2_in0_reg[106].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[107]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[107]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[107]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[107]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[107]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[107]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[107]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[107]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[107]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[107]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[107]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[107]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[108]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[108]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[108]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[108]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[108]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[108]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[108]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[108]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[108]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[108]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[108]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[108]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[109]/CLR of ARO1/FF_before_MUX2_in0_reg[109].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[10]/CLR of ARO1/FF_before_MUX2_in0_reg[10].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[110]/CLR of ARO1/FF_before_MUX2_in0_reg[110].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[111]/CLR of ARO1/FF_before_MUX2_in0_reg[111].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[112]/CLR of ARO1/FF_before_MUX2_in0_reg[112].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[113]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[113]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[113]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[113]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[113]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[113]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[113]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[113]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[113]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[113]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[113]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[113]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[114]/CLR of ARO1/FF_before_MUX2_in0_reg[114].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[115]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[115]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[115]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[115]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[115]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[115]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[115]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[115]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[115]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[115]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[115]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[115]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[116]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[116]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[116]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[116]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[116]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[116]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[116]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[116]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[116]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[116]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[116]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[116]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[117]/CLR of ARO1/FF_before_MUX2_in0_reg[117].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[118]/CLR of ARO1/FF_before_MUX2_in0_reg[118].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[119]/CLR of ARO1/FF_before_MUX2_in0_reg[119].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[11]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[11]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[11]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[11]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[11]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[11]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[11]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[11]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[11]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[11]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[11]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[11]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[120]/CLR of ARO1/FF_before_MUX2_in0_reg[120].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[121]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[121]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[121]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[121]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[121]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[121]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[121]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[121]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[121]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[121]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[121]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[121]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[122]/CLR of ARO1/FF_before_MUX2_in0_reg[122].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[123]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[123]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[123]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[123]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[123]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[123]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[123]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[123]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[123]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[123]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[123]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[123]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[124]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[124]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[124]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[124]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[124]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[124]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[124]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[124]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[124]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[124]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[124]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[124]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[125]/CLR of ARO1/FF_before_MUX2_in0_reg[125].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[126]/CLR of ARO1/FF_before_MUX2_in0_reg[126].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[127]/CLR of ARO1/FF_before_MUX2_in0_reg[127].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[12]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[12]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[12]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[12]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[12]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[12]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[12]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[12]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[12]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[12]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[12]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[12]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[13]/CLR of ARO1/FF_before_MUX2_in0_reg[13].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[14]/CLR of ARO1/FF_before_MUX2_in0_reg[14].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[15]/CLR of ARO1/FF_before_MUX2_in0_reg[15].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[16]/CLR of ARO1/FF_before_MUX2_in0_reg[16].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[17]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[17]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[17]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[17]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[17]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[17]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[17]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[17]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[17]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[17]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[17]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[17]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[18]/CLR of ARO1/FF_before_MUX2_in0_reg[18].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[19]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[19]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[19]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[19]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[19]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[19]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[19]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[19]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[19]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[19]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[19]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[19]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[1]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[1]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[1]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[1]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[1]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[1]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[1]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[1]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[1]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[1]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[1]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[1]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[20]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[20]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[20]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[20]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[20]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[20]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[20]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[20]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[20]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[20]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[20]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[20]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[21]/CLR of ARO1/FF_before_MUX2_in0_reg[21].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[22]/CLR of ARO1/FF_before_MUX2_in0_reg[22].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[23]/CLR of ARO1/FF_before_MUX2_in0_reg[23].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[24]/CLR of ARO1/FF_before_MUX2_in0_reg[24].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[25]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[25]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[25]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[25]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[25]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[25]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[25]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[25]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[25]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[25]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[25]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[25]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[26]/CLR of ARO1/FF_before_MUX2_in0_reg[26].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[27]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[27]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[27]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[27]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[27]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[27]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[27]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[27]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[27]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[27]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[27]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[27]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[28]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[28]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[28]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[28]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[28]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[28]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[28]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[28]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[28]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[28]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[28]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[28]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[29]/CLR of ARO1/FF_before_MUX2_in0_reg[29].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[2]/CLR of ARO1/FF_before_MUX2_in0_reg[2].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[30]/CLR of ARO1/FF_before_MUX2_in0_reg[30].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[31]/CLR of ARO1/FF_before_MUX2_in0_reg[31].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[32]/CLR of ARO1/FF_before_MUX2_in0_reg[32].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[33]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[33]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[33]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[33]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[33]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[33]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[33]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[33]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[33]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[33]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[33]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[33]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[34]/CLR of ARO1/FF_before_MUX2_in0_reg[34].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[35]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[35]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[35]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[35]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[35]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[35]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[35]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[35]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[35]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[35]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[35]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[35]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[36]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[36]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[36]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[36]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[36]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[36]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[36]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[36]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[36]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[36]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[36]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[36]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[37]/CLR of ARO1/FF_before_MUX2_in0_reg[37].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[38]/CLR of ARO1/FF_before_MUX2_in0_reg[38].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[39]/CLR of ARO1/FF_before_MUX2_in0_reg[39].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[3]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[3]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[3]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[3]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[3]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[3]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[3]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[3]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[3]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[3]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[3]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[3]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[40]/CLR of ARO1/FF_before_MUX2_in0_reg[40].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[41]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[41]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[41]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[41]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[41]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[41]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[41]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[41]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[41]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[41]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[41]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[41]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[42]/CLR of ARO1/FF_before_MUX2_in0_reg[42].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[43]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[43]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[43]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[43]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[43]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[43]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[43]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[43]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[43]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[43]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[43]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[43]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[44]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[44]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[44]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[44]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[44]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[44]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[44]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[44]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[44]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[44]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[44]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[44]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[45]/CLR of ARO1/FF_before_MUX2_in0_reg[45].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[46]/CLR of ARO1/FF_before_MUX2_in0_reg[46].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[47]/CLR of ARO1/FF_before_MUX2_in0_reg[47].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[48]/CLR of ARO1/FF_before_MUX2_in0_reg[48].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[49]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[49]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[49]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[49]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[49]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[49]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[49]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[49]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[49]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[49]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[49]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[49]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[4]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[4]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[4]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[4]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[4]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[4]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[4]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[4]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[4]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[4]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[4]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[4]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[50]/CLR of ARO1/FF_before_MUX2_in0_reg[50].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[51]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[51]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[51]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[51]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[51]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[51]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[51]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[51]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[51]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[51]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[51]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[51]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[52]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[52]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[52]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[52]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[52]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[52]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[52]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[52]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[52]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[52]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[52]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[52]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[53]/CLR of ARO1/FF_before_MUX2_in0_reg[53].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[54]/CLR of ARO1/FF_before_MUX2_in0_reg[54].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[55]/CLR of ARO1/FF_before_MUX2_in0_reg[55].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[56]/CLR of ARO1/FF_before_MUX2_in0_reg[56].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[57]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[57]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[57]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[57]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[57]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[57]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[57]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[57]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[57]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[57]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[57]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[57]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[58]/CLR of ARO1/FF_before_MUX2_in0_reg[58].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[59]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[59]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[59]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[59]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[59]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[59]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[59]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[59]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[59]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[59]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[59]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[59]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[5]/CLR of ARO1/FF_before_MUX2_in0_reg[5].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[60]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[60]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[60]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[60]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[60]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[60]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[60]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[60]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[60]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[60]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[60]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[60]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[61]/CLR of ARO1/FF_before_MUX2_in0_reg[61].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[62]/CLR of ARO1/FF_before_MUX2_in0_reg[62].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[63]/CLR of ARO1/FF_before_MUX2_in0_reg[63].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[64]/CLR of ARO1/FF_before_MUX2_in0_reg[64].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[65]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[65]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[65]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[65]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[65]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[65]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[65]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[65]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[65]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[65]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[65]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[65]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[66]/CLR of ARO1/FF_before_MUX2_in0_reg[66].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[67]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[67]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[67]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[67]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[67]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[67]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[67]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[67]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[67]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[67]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[67]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[67]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[68]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[68]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[68]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[68]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[68]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[68]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[68]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[68]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[68]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[68]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[68]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[68]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[69]/CLR of ARO1/FF_before_MUX2_in0_reg[69].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[6]/CLR of ARO1/FF_before_MUX2_in0_reg[6].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[70]/CLR of ARO1/FF_before_MUX2_in0_reg[70].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[71]/CLR of ARO1/FF_before_MUX2_in0_reg[71].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[72]/CLR of ARO1/FF_before_MUX2_in0_reg[72].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[73]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[73]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[73]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[73]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[73]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[73]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[73]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[73]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[73]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[73]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[73]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[73]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[74]/CLR of ARO1/FF_before_MUX2_in0_reg[74].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[75]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[75]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[75]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[75]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[75]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[75]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[75]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[75]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[75]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[75]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[75]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[75]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[76]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[76]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[76]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[76]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[76]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[76]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[76]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[76]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[76]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[76]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[76]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[76]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[77]/CLR of ARO1/FF_before_MUX2_in0_reg[77].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[78]/CLR of ARO1/FF_before_MUX2_in0_reg[78].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[79]/CLR of ARO1/FF_before_MUX2_in0_reg[79].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[7]/CLR of ARO1/FF_before_MUX2_in0_reg[7].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[80]/CLR of ARO1/FF_before_MUX2_in0_reg[80].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[81]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[81]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[81]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[81]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[81]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[81]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[81]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[81]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[81]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[81]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[81]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[81]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[82]/CLR of ARO1/FF_before_MUX2_in0_reg[82].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[83]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[83]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[83]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[83]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[83]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[83]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[83]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[83]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[83]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[83]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[83]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[83]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[84]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[84]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[84]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[84]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[84]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[84]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[84]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[84]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[84]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[84]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[84]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[84]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[85]/CLR of ARO1/FF_before_MUX2_in0_reg[85].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[86]/CLR of ARO1/FF_before_MUX2_in0_reg[86].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[87]/CLR of ARO1/FF_before_MUX2_in0_reg[87].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[88]/CLR of ARO1/FF_before_MUX2_in0_reg[88].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[89]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[89]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[89]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[89]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[89]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[89]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[89]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[89]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[89]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[89]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[89]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[89]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[8]/CLR of ARO1/FF_before_MUX2_in0_reg[8].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[90]/CLR of ARO1/FF_before_MUX2_in0_reg[90].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[91]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[91]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[91]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[91]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[91]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[91]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[91]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[91]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[91]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[91]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[91]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[91]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[92]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[92]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[92]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[92]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[92]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[92]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[92]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[92]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[92]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[92]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[92]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[92]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[93]/CLR of ARO1/FF_before_MUX2_in0_reg[93].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[94]/CLR of ARO1/FF_before_MUX2_in0_reg[94].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[95]/CLR of ARO1/FF_before_MUX2_in0_reg[95].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[96]/CLR of ARO1/FF_before_MUX2_in0_reg[96].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[97]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[97]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[97]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[97]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[97]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[97]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[97]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[97]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[97]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[97]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[97]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[97]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[98]/CLR of ARO1/FF_before_MUX2_in0_reg[98].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[99]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[99]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[99]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[99]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[99]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[99]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[99]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[99]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[99]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[99]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[99]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[99]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[9]_bret/CLR of ARO1/FF_before_MUX2_in0_reg[9]_bret.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[9]_bret__0/CLR of ARO1/FF_before_MUX2_in0_reg[9]_bret__0.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[9]_bret__1/CLR of ARO1/FF_before_MUX2_in0_reg[9]_bret__1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[9]_bret__2/CLR of ARO1/FF_before_MUX2_in0_reg[9]_bret__2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[9]_bret__3/CLR of ARO1/FF_before_MUX2_in0_reg[9]_bret__3.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in0_reg[9]_bret__4/CLR of ARO1/FF_before_MUX2_in0_reg[9]_bret__4.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[0]/CLR of ARO1/FF_before_MUX2_in1_reg[0].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[100]/CLR of ARO1/FF_before_MUX2_in1_reg[100].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[101]/CLR of ARO1/FF_before_MUX2_in1_reg[101].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[102]/CLR of ARO1/FF_before_MUX2_in1_reg[102].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[103]/CLR of ARO1/FF_before_MUX2_in1_reg[103].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[104]/CLR of ARO1/FF_before_MUX2_in1_reg[104].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[105]/CLR of ARO1/FF_before_MUX2_in1_reg[105].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[106]/CLR of ARO1/FF_before_MUX2_in1_reg[106].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[107]/CLR of ARO1/FF_before_MUX2_in1_reg[107].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[108]/CLR of ARO1/FF_before_MUX2_in1_reg[108].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[109]/CLR of ARO1/FF_before_MUX2_in1_reg[109].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[10]/CLR of ARO1/FF_before_MUX2_in1_reg[10].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[110]/CLR of ARO1/FF_before_MUX2_in1_reg[110].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[111]/CLR of ARO1/FF_before_MUX2_in1_reg[111].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[112]/CLR of ARO1/FF_before_MUX2_in1_reg[112].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[113]/CLR of ARO1/FF_before_MUX2_in1_reg[113].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[114]/CLR of ARO1/FF_before_MUX2_in1_reg[114].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[115]/CLR of ARO1/FF_before_MUX2_in1_reg[115].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[116]/CLR of ARO1/FF_before_MUX2_in1_reg[116].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[117]/CLR of ARO1/FF_before_MUX2_in1_reg[117].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[118]/CLR of ARO1/FF_before_MUX2_in1_reg[118].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[119]/CLR of ARO1/FF_before_MUX2_in1_reg[119].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[11]/CLR of ARO1/FF_before_MUX2_in1_reg[11].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[120]/CLR of ARO1/FF_before_MUX2_in1_reg[120].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[121]/CLR of ARO1/FF_before_MUX2_in1_reg[121].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[122]/CLR of ARO1/FF_before_MUX2_in1_reg[122].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[123]/CLR of ARO1/FF_before_MUX2_in1_reg[123].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[124]/CLR of ARO1/FF_before_MUX2_in1_reg[124].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[125]/CLR of ARO1/FF_before_MUX2_in1_reg[125].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[126]/CLR of ARO1/FF_before_MUX2_in1_reg[126].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[127]/CLR of ARO1/FF_before_MUX2_in1_reg[127].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[12]/CLR of ARO1/FF_before_MUX2_in1_reg[12].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[13]/CLR of ARO1/FF_before_MUX2_in1_reg[13].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[14]/CLR of ARO1/FF_before_MUX2_in1_reg[14].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[15]/CLR of ARO1/FF_before_MUX2_in1_reg[15].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[16]/CLR of ARO1/FF_before_MUX2_in1_reg[16].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[17]/CLR of ARO1/FF_before_MUX2_in1_reg[17].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[18]/CLR of ARO1/FF_before_MUX2_in1_reg[18].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[19]/CLR of ARO1/FF_before_MUX2_in1_reg[19].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[1]/CLR of ARO1/FF_before_MUX2_in1_reg[1].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[20]/CLR of ARO1/FF_before_MUX2_in1_reg[20].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[21]/CLR of ARO1/FF_before_MUX2_in1_reg[21].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[22]/CLR of ARO1/FF_before_MUX2_in1_reg[22].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[23]/CLR of ARO1/FF_before_MUX2_in1_reg[23].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[24]/CLR of ARO1/FF_before_MUX2_in1_reg[24].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[25]/CLR of ARO1/FF_before_MUX2_in1_reg[25].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[26]/CLR of ARO1/FF_before_MUX2_in1_reg[26].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[27]/CLR of ARO1/FF_before_MUX2_in1_reg[27].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[28]/CLR of ARO1/FF_before_MUX2_in1_reg[28].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[29]/CLR of ARO1/FF_before_MUX2_in1_reg[29].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[2]/CLR of ARO1/FF_before_MUX2_in1_reg[2].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[30]/CLR of ARO1/FF_before_MUX2_in1_reg[30].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[31]/CLR of ARO1/FF_before_MUX2_in1_reg[31].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[32]/CLR of ARO1/FF_before_MUX2_in1_reg[32].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[33]/CLR of ARO1/FF_before_MUX2_in1_reg[33].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[34]/CLR of ARO1/FF_before_MUX2_in1_reg[34].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[35]/CLR of ARO1/FF_before_MUX2_in1_reg[35].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[36]/CLR of ARO1/FF_before_MUX2_in1_reg[36].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[37]/CLR of ARO1/FF_before_MUX2_in1_reg[37].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[38]/CLR of ARO1/FF_before_MUX2_in1_reg[38].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[39]/CLR of ARO1/FF_before_MUX2_in1_reg[39].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[3]/CLR of ARO1/FF_before_MUX2_in1_reg[3].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[40]/CLR of ARO1/FF_before_MUX2_in1_reg[40].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[41]/CLR of ARO1/FF_before_MUX2_in1_reg[41].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[42]/CLR of ARO1/FF_before_MUX2_in1_reg[42].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[43]/CLR of ARO1/FF_before_MUX2_in1_reg[43].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[44]/CLR of ARO1/FF_before_MUX2_in1_reg[44].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[45]/CLR of ARO1/FF_before_MUX2_in1_reg[45].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[46]/CLR of ARO1/FF_before_MUX2_in1_reg[46].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[47]/CLR of ARO1/FF_before_MUX2_in1_reg[47].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[48]/CLR of ARO1/FF_before_MUX2_in1_reg[48].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[49]/CLR of ARO1/FF_before_MUX2_in1_reg[49].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[4]/CLR of ARO1/FF_before_MUX2_in1_reg[4].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[50]/CLR of ARO1/FF_before_MUX2_in1_reg[50].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[51]/CLR of ARO1/FF_before_MUX2_in1_reg[51].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[52]/CLR of ARO1/FF_before_MUX2_in1_reg[52].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[53]/CLR of ARO1/FF_before_MUX2_in1_reg[53].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[54]/CLR of ARO1/FF_before_MUX2_in1_reg[54].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[55]/CLR of ARO1/FF_before_MUX2_in1_reg[55].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[56]/CLR of ARO1/FF_before_MUX2_in1_reg[56].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[57]/CLR of ARO1/FF_before_MUX2_in1_reg[57].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[58]/CLR of ARO1/FF_before_MUX2_in1_reg[58].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[59]/CLR of ARO1/FF_before_MUX2_in1_reg[59].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[5]/CLR of ARO1/FF_before_MUX2_in1_reg[5].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[60]/CLR of ARO1/FF_before_MUX2_in1_reg[60].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[61]/CLR of ARO1/FF_before_MUX2_in1_reg[61].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[62]/CLR of ARO1/FF_before_MUX2_in1_reg[62].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[63]/CLR of ARO1/FF_before_MUX2_in1_reg[63].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[64]/CLR of ARO1/FF_before_MUX2_in1_reg[64].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[65]/CLR of ARO1/FF_before_MUX2_in1_reg[65].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[66]/CLR of ARO1/FF_before_MUX2_in1_reg[66].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[67]/CLR of ARO1/FF_before_MUX2_in1_reg[67].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[68]/CLR of ARO1/FF_before_MUX2_in1_reg[68].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[69]/CLR of ARO1/FF_before_MUX2_in1_reg[69].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[6]/CLR of ARO1/FF_before_MUX2_in1_reg[6].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[70]/CLR of ARO1/FF_before_MUX2_in1_reg[70].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[71]/CLR of ARO1/FF_before_MUX2_in1_reg[71].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[72]/CLR of ARO1/FF_before_MUX2_in1_reg[72].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[73]/CLR of ARO1/FF_before_MUX2_in1_reg[73].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[74]/CLR of ARO1/FF_before_MUX2_in1_reg[74].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[75]/CLR of ARO1/FF_before_MUX2_in1_reg[75].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[76]/CLR of ARO1/FF_before_MUX2_in1_reg[76].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[77]/CLR of ARO1/FF_before_MUX2_in1_reg[77].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[78]/CLR of ARO1/FF_before_MUX2_in1_reg[78].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[79]/CLR of ARO1/FF_before_MUX2_in1_reg[79].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[7]/CLR of ARO1/FF_before_MUX2_in1_reg[7].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[80]/CLR of ARO1/FF_before_MUX2_in1_reg[80].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[81]/CLR of ARO1/FF_before_MUX2_in1_reg[81].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[82]/CLR of ARO1/FF_before_MUX2_in1_reg[82].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[83]/CLR of ARO1/FF_before_MUX2_in1_reg[83].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[84]/CLR of ARO1/FF_before_MUX2_in1_reg[84].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[85]/CLR of ARO1/FF_before_MUX2_in1_reg[85].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[86]/CLR of ARO1/FF_before_MUX2_in1_reg[86].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[87]/CLR of ARO1/FF_before_MUX2_in1_reg[87].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[88]/CLR of ARO1/FF_before_MUX2_in1_reg[88].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[89]/CLR of ARO1/FF_before_MUX2_in1_reg[89].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[8]/CLR of ARO1/FF_before_MUX2_in1_reg[8].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[90]/CLR of ARO1/FF_before_MUX2_in1_reg[90].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[91]/CLR of ARO1/FF_before_MUX2_in1_reg[91].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[92]/CLR of ARO1/FF_before_MUX2_in1_reg[92].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[93]/CLR of ARO1/FF_before_MUX2_in1_reg[93].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[94]/CLR of ARO1/FF_before_MUX2_in1_reg[94].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[95]/CLR of ARO1/FF_before_MUX2_in1_reg[95].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[96]/CLR of ARO1/FF_before_MUX2_in1_reg[96].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[97]/CLR of ARO1/FF_before_MUX2_in1_reg[97].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[98]/CLR of ARO1/FF_before_MUX2_in1_reg[98].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[99]/CLR of ARO1/FF_before_MUX2_in1_reg[99].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/FF_before_MUX2_in1_reg[9]/CLR of ARO1/FF_before_MUX2_in1_reg[9].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[0]/CLR of ARO1/cipher_text_reg[0].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[100]/CLR of ARO1/cipher_text_reg[100].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[101]/CLR of ARO1/cipher_text_reg[101].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[102]/CLR of ARO1/cipher_text_reg[102].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[103]/CLR of ARO1/cipher_text_reg[103].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[104]/CLR of ARO1/cipher_text_reg[104].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[105]/CLR of ARO1/cipher_text_reg[105].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[106]/CLR of ARO1/cipher_text_reg[106].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[107]/CLR of ARO1/cipher_text_reg[107].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[108]/CLR of ARO1/cipher_text_reg[108].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[109]/CLR of ARO1/cipher_text_reg[109].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[10]/CLR of ARO1/cipher_text_reg[10].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[110]/CLR of ARO1/cipher_text_reg[110].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[111]/CLR of ARO1/cipher_text_reg[111].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[112]/CLR of ARO1/cipher_text_reg[112].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[113]/CLR of ARO1/cipher_text_reg[113].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[114]/CLR of ARO1/cipher_text_reg[114].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[115]/CLR of ARO1/cipher_text_reg[115].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[116]/CLR of ARO1/cipher_text_reg[116].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[117]/CLR of ARO1/cipher_text_reg[117].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[118]/CLR of ARO1/cipher_text_reg[118].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[119]/CLR of ARO1/cipher_text_reg[119].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[11]/CLR of ARO1/cipher_text_reg[11].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[120]/CLR of ARO1/cipher_text_reg[120].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[121]/CLR of ARO1/cipher_text_reg[121].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[122]/CLR of ARO1/cipher_text_reg[122].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[123]/CLR of ARO1/cipher_text_reg[123].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[124]/CLR of ARO1/cipher_text_reg[124].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[125]/CLR of ARO1/cipher_text_reg[125].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[126]/CLR of ARO1/cipher_text_reg[126].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[127]/CLR of ARO1/cipher_text_reg[127].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[12]/CLR of ARO1/cipher_text_reg[12].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[13]/CLR of ARO1/cipher_text_reg[13].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[14]/CLR of ARO1/cipher_text_reg[14].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[15]/CLR of ARO1/cipher_text_reg[15].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[16]/CLR of ARO1/cipher_text_reg[16].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[17]/CLR of ARO1/cipher_text_reg[17].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[18]/CLR of ARO1/cipher_text_reg[18].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[19]/CLR of ARO1/cipher_text_reg[19].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[1]/CLR of ARO1/cipher_text_reg[1].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[20]/CLR of ARO1/cipher_text_reg[20].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[21]/CLR of ARO1/cipher_text_reg[21].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[22]/CLR of ARO1/cipher_text_reg[22].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[23]/CLR of ARO1/cipher_text_reg[23].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[24]/CLR of ARO1/cipher_text_reg[24].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[25]/CLR of ARO1/cipher_text_reg[25].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[26]/CLR of ARO1/cipher_text_reg[26].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[27]/CLR of ARO1/cipher_text_reg[27].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[28]/CLR of ARO1/cipher_text_reg[28].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[29]/CLR of ARO1/cipher_text_reg[29].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[2]/CLR of ARO1/cipher_text_reg[2].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[30]/CLR of ARO1/cipher_text_reg[30].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[31]/CLR of ARO1/cipher_text_reg[31].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[32]/CLR of ARO1/cipher_text_reg[32].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[33]/CLR of ARO1/cipher_text_reg[33].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[34]/CLR of ARO1/cipher_text_reg[34].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[35]/CLR of ARO1/cipher_text_reg[35].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[36]/CLR of ARO1/cipher_text_reg[36].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[37]/CLR of ARO1/cipher_text_reg[37].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[38]/CLR of ARO1/cipher_text_reg[38].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[39]/CLR of ARO1/cipher_text_reg[39].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[3]/CLR of ARO1/cipher_text_reg[3].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[40]/CLR of ARO1/cipher_text_reg[40].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[41]/CLR of ARO1/cipher_text_reg[41].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[42]/CLR of ARO1/cipher_text_reg[42].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[43]/CLR of ARO1/cipher_text_reg[43].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[44]/CLR of ARO1/cipher_text_reg[44].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[45]/CLR of ARO1/cipher_text_reg[45].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[46]/CLR of ARO1/cipher_text_reg[46].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[47]/CLR of ARO1/cipher_text_reg[47].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[48]/CLR of ARO1/cipher_text_reg[48].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[49]/CLR of ARO1/cipher_text_reg[49].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[4]/CLR of ARO1/cipher_text_reg[4].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[50]/CLR of ARO1/cipher_text_reg[50].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[51]/CLR of ARO1/cipher_text_reg[51].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[52]/CLR of ARO1/cipher_text_reg[52].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[53]/CLR of ARO1/cipher_text_reg[53].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[54]/CLR of ARO1/cipher_text_reg[54].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[55]/CLR of ARO1/cipher_text_reg[55].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[56]/CLR of ARO1/cipher_text_reg[56].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[57]/CLR of ARO1/cipher_text_reg[57].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[58]/CLR of ARO1/cipher_text_reg[58].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[59]/CLR of ARO1/cipher_text_reg[59].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[5]/CLR of ARO1/cipher_text_reg[5].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[60]/CLR of ARO1/cipher_text_reg[60].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[61]/CLR of ARO1/cipher_text_reg[61].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[62]/CLR of ARO1/cipher_text_reg[62].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[63]/CLR of ARO1/cipher_text_reg[63].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[64]/CLR of ARO1/cipher_text_reg[64].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[65]/CLR of ARO1/cipher_text_reg[65].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[66]/CLR of ARO1/cipher_text_reg[66].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[67]/CLR of ARO1/cipher_text_reg[67].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[68]/CLR of ARO1/cipher_text_reg[68].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[69]/CLR of ARO1/cipher_text_reg[69].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[6]/CLR of ARO1/cipher_text_reg[6].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[70]/CLR of ARO1/cipher_text_reg[70].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[71]/CLR of ARO1/cipher_text_reg[71].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[72]/CLR of ARO1/cipher_text_reg[72].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[73]/CLR of ARO1/cipher_text_reg[73].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[74]/CLR of ARO1/cipher_text_reg[74].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[75]/CLR of ARO1/cipher_text_reg[75].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[76]/CLR of ARO1/cipher_text_reg[76].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[77]/CLR of ARO1/cipher_text_reg[77].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[78]/CLR of ARO1/cipher_text_reg[78].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[79]/CLR of ARO1/cipher_text_reg[79].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[7]/CLR of ARO1/cipher_text_reg[7].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[80]/CLR of ARO1/cipher_text_reg[80].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[81]/CLR of ARO1/cipher_text_reg[81].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[82]/CLR of ARO1/cipher_text_reg[82].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[83]/CLR of ARO1/cipher_text_reg[83].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[84]/CLR of ARO1/cipher_text_reg[84].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[85]/CLR of ARO1/cipher_text_reg[85].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[86]/CLR of ARO1/cipher_text_reg[86].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[87]/CLR of ARO1/cipher_text_reg[87].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[88]/CLR of ARO1/cipher_text_reg[88].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[89]/CLR of ARO1/cipher_text_reg[89].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[8]/CLR of ARO1/cipher_text_reg[8].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[90]/CLR of ARO1/cipher_text_reg[90].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[91]/CLR of ARO1/cipher_text_reg[91].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[92]/CLR of ARO1/cipher_text_reg[92].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[93]/CLR of ARO1/cipher_text_reg[93].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[94]/CLR of ARO1/cipher_text_reg[94].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[95]/CLR of ARO1/cipher_text_reg[95].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[96]/CLR of ARO1/cipher_text_reg[96].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[97]/CLR of ARO1/cipher_text_reg[97].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[98]/CLR of ARO1/cipher_text_reg[98].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[99]/CLR of ARO1/cipher_text_reg[99].
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell ARO1/round_key[127]_i_3 driving pin ARO1/cipher_text_reg[9]/CLR of ARO1/cipher_text_reg[9].
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 894 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 3caaf53b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.578 . Memory (MB): peak = 1642.688 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-442] LUT Reduction optimized 0 LUTs
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 3caaf53b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.640 . Memory (MB): peak = 1642.688 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 3caaf53b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.702 . Memory (MB): peak = 1642.688 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 3caaf53b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.790 . Memory (MB): peak = 1642.688 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 3caaf53b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.826 . Memory (MB): peak = 1642.688 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Constant propagation
+INFO: [Opt 31-442] LUT Reduction optimized 0 LUTs
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 6 Constant propagation | Checksum: 3caaf53b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.871 . Memory (MB): peak = 1642.688 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 7 Sweep
+Phase 7 Sweep | Checksum: 3caaf53b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.913 . Memory (MB): peak = 1642.688 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 8 Resynthesis
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT1 CU1/controller_LUT1.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT1 CU1/controller_LUT1_1.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT1 CU1/controller_LUT1_10.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT1 CU1/controller_LUT1_2.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT1 CU1/controller_LUT1_3.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT1 CU1/controller_LUT1_4.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT1 CU1/controller_LUT1_5.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT1 CU1/controller_LUT1_6.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT1 CU1/controller_LUT1_7.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT1 CU1/controller_LUT1_8.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT1 CU1/controller_LUT1_9.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT2 CU1/controller_LUT2.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT2 CU1/controller_LUT2_1.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT2 CU1/controller_LUT2_2.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT2 CU1/controller_LUT2_3.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT3 CU1/controller_LUT3.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT3 CU1/controller_LUT3_1.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT3 CU1/controller_LUT3_10.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT3 CU1/controller_LUT3_11.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT3 CU1/controller_LUT3_12.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT3 CU1/controller_LUT3_13.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT3 CU1/controller_LUT3_14.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT3 CU1/controller_LUT3_2.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT3 CU1/controller_LUT3_3.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT3 CU1/controller_LUT3_4.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT3 CU1/controller_LUT3_5.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT3 CU1/controller_LUT3_6.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT3 CU1/controller_LUT3_7.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT3 CU1/controller_LUT3_8.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT3 CU1/controller_LUT3_9.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT4 CU1/controller_LUT4.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT4 CU1/controller_LUT4_1.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT4 CU1/controller_LUT4_2.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT4 CU1/controller_LUT4_3.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT4 CU1/controller_LUT4_4.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT4 CU1/controller_LUT4_5.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT4 CU1/controller_LUT4_6.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT5 CU1/controller_LUT5.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT5 CU1/controller_LUT5_1.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT6 CU1/controller_LUT6.
+INFO: [Opt 31-96] Resynthesis adds cell: LUT6 CU1/controller_LUT6_1.
+INFO: [Opt 31-96] Resynthesis adds cell: VCC CU1/controller_VCC.
+INFO: [Opt 31-74] Optimized 1 modules.
+INFO: [Opt 31-75] Optimized module 'controller'.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell CU1/controller_LUT1 driving pin CU1/controller_LUT2_1/O of CU1/controller_LUT2_1.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell CU1/controller_LUT1_10 driving pin CU1/controller_LUT6/O of CU1/controller_LUT6.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell CU1/controller_LUT1_4 driving pin CU1/controller_LUT2_2/O of CU1/controller_LUT2_2.
+INFO: [Opt 31-47] Cell absorbed into downstream logic: LUT1 cell CU1/controller_LUT1_5 driving pin CU1/controller_LUT2/O of CU1/controller_LUT2.
+INFO: [Opt 31-94] Delete cell: LUT1 CU1/controller_LUT1.
+INFO: [Opt 31-94] Delete cell: LUT1 CU1/controller_LUT1_10.
+INFO: [Opt 31-94] Delete cell: LUT1 CU1/controller_LUT1_4.
+INFO: [Opt 31-94] Delete cell: LUT1 CU1/controller_LUT1_5.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-131] Removed net: CU1/RC_rom_out[7]_i_4_n_0
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT5 CU1/FF_before_MUX2_in0[127]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT2 CU1/FSM_onehot_current_state[0]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT3 CU1/FSM_onehot_current_state[10]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT3 CU1/FSM_onehot_current_state[11]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT3 CU1/FSM_onehot_current_state[12]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT3 CU1/FSM_onehot_current_state[1]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT3 CU1/FSM_onehot_current_state[2]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT3 CU1/FSM_onehot_current_state[3]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT3 CU1/FSM_onehot_current_state[4]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT3 CU1/FSM_onehot_current_state[5]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT3 CU1/FSM_onehot_current_state[6]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT3 CU1/FSM_onehot_current_state[7]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT3 CU1/FSM_onehot_current_state[8]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT3 CU1/FSM_onehot_current_state[9]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT5 CU1/RC_rom_out[0]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT6 CU1/RC_rom_out[1]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT5 CU1/RC_rom_out[2]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT5 CU1/RC_rom_out[3]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT2 CU1/RC_rom_out[4]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT6 CU1/RC_rom_out[4]_i_2.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT5 CU1/RC_rom_out[5]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT5 CU1/RC_rom_out[6]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT5 CU1/RC_rom_out[7]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT4 CU1/RC_rom_out[7]_i_2.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT5 CU1/RC_rom_out[7]_i_3.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT6 CU1/RC_rom_out[7]_i_4.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT2 CU1/cipher_text[127]_i_2.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT2 CU1/cipher_text[63]_i_2.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT3 CU1/counter_seq[0]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT2 CU1/data_out_reg_i_17.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT2 CU1/data_out_reg_i_17__0.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT6 CU1/data_out_reg_i_21.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT5 CU1/round_key[127]_i_1.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT6 CU1/round_key[127]_i_4.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT2 CU1/round_key[127]_i_5.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT4 CU1/round_key[127]_i_6.
+INFO: [Opt 31-54] Cell has no loads and is removed: LUT2 CU1/round_key[48]_i_2.
+INFO: [Opt 31-442] LUT Reduction optimized 0 LUTs
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 8 Resynthesis | Checksum: 4329649b
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:01:02 . Memory (MB): peak = 3536.039 ; gain = 1893.352
+INFO: [Opt 31-389] Phase Resynthesis created 31 cells and removed 37 cells
+
+Phase 9 Post Processing Netlist
+Phase 9 Post Processing Netlist | Checksum: 4329649b
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:01:02 . Memory (MB): peak = 3536.039 ; gain = 1893.352
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3536.039 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1223769e5
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:01:02 . Memory (MB): peak = 3536.039 ; gain = 1893.352
+
+Starting Power Optimization Task
+Begin power optimizations | Checksum: 1223769e5
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-50] Optimizing power for module AES_128 ...
+INFO: [Pwropt 34-207] Design is in pre-place state. Running in pre-place mode.
+Pre-processing: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 3536.039 ; gain = 0.000
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+IDT: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3536.039 ; gain = 0.000
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Pwropt 34-215] Skipped ODC enables for 140 nets in BRAM flops in bus-based analysis.
+INFO: [Pwropt 34-214] Skipped ODC enables for 450 nets in BRAM address flops in bus-based analysis.
+ODC: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 3536.039 ; gain = 0.000
+Power optimization passes: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.307 . Memory (MB): peak = 3536.039 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=6.492 | TNS=0.000 |
+PSMgr Creation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3536.039 ; gain = 0.000
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+INFO: [Pwropt 34-77] Creating clock enable groups ...
+ Done
+Grouping enables: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 3536.039 ; gain = 0.000
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-26] Patching clock gating enable signals for design AES_128 ...
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 10 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+
+Number of Slice Registers augmented: 0 newly gated: 0 Total: 902
+Number of SRLs augmented: 0  newly gated: 0 Total: 0
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 20
+Number of Flops added for Enable Generation: 0
+
+Flops dropped: 0/0 RAMS dropped: 0/0 Clusters dropped: 0/0 Enables dropped: 0
+
+Number of LUTs created for enable logic : 
+    LUT1 : 0
+    LUT2 : 0
+    LUT3 : 0
+    LUT4 : 0
+    LUT5 : 0
+    LUT6 : 0
+
+Patching clock gating enables finished successfully.
+Ending PowerOpt Patch Enables Task | Checksum: 1223769e5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 3536.039 ; gain = 0.000
+INFO: [Pwropt 34-30] Power optimization finished successfully.
+End power optimizations | Checksum: 1223769e5
+Power optimization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3536.039 ; gain = 0.000
+INFO: [Pwropt 34-198] Malloced memory gain at end of power optimization: 0 bytes
+Ending Power Optimization Task | Checksum: 1223769e5
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3536.039 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1223769e5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3536.039 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+1036 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:39 ; elapsed = 00:01:11 . Memory (MB): peak = 3536.039 ; gain = 1911.141
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint 'F:/Aloshka/Collage/post collage material/AES/RTL/FPGA Synthesis/AES_128/AES_128.runs/impl_1/AES_128_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file AES_128_drc_opted.rpt -pb AES_128_drc_opted.pb -rpx AES_128_drc_opted.rpx
+Command: report_drc -file AES_128_drc_opted.rpt -pb AES_128_drc_opted.pb -rpx AES_128_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file F:/Aloshka/Collage/post collage material/AES/RTL/FPGA Synthesis/AES_128/AES_128.runs/impl_1/AES_128_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 3772.125 ; gain = 236.086
+Command: place_design -directive ExtraTimingOpt
+Attempting to get a license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu7ev'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'ExtraTimingOpt' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3772.125 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: eb2e306c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 3772.125 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3772.125 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (387) is greater than number of available sites (360).
+The following are banks with available pins: 
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 28 |    52 |     0 |                                                                        |                                          |        |        |        |     |
+| 64 |    52 |     0 |                                                                        |                                          |        |        |        |     |
+| 65 |    52 |     0 |                                                                        |                                          |        |        |        |     |
+| 66 |    52 |     0 |                                                                        |                                          |        |        |        |     |
+| 67 |    52 |     0 |                                                                        |                                          |        |        |        |     |
+| 68 |    52 |     0 |                                                                        |                                          |        |        |        |     |
+| 87 |    24 |     0 |                                                                        |                                          |        |        |        |     |
+| 88 |    24 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   360 |     0 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: a4715618
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3772.125 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: a4715618
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3772.125 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: a4715618
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3772.125 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+1057 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 20 14:56:09 2024...
